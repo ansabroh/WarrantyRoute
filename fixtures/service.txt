@@ -1,0 +1,6 @@
+SYNTHETIC AUTHORIZED SERVICE REPORT WR-01
+Inspected product mixer_01. Defect onset: 2026-06-01. Claimed component: motor. The motor winding has a manufacturing defect confirmed by bench inspection.
+No misuse, liquid damage, unauthorized repairs or other warranty exclusions were found.
+Complete relevant repair history: no previous repairs or service interventions.
+Additional observed component: housing. Housing scratch is purely cosmetic, caused during normal handling; it does not affect motor operation.
+The registered service account attests this exact report and its association with the on-chain claim.

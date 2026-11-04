@@ -1,0 +1,3 @@
+SYNTHETIC DEMONSTRATION PURCHASE RECORD WR-01
+The warranty issuer confirms product mixer_01 was purchased on 2026-01-01 by the account recorded as claimant in the on-chain warranty registration.
+Original warranty: WR-01. Coverage ends 2026-12-31. Report claims by 2026-12-31.
