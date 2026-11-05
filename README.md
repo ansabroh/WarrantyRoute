@@ -15,7 +15,7 @@ Whether a winding failure is a manufacturing defect, a scratch is cosmetic, or a
 5. Issuer or claimant calls `assess(claim_id)`. Only an INCONCLUSIVE assessment can be retried, at most three total attempts. Terminal results cannot be replaced. Failed consensus transactions do not create receipts.
 6. Read `get_status`, `get_receipt`, `get_claim`, `get_warranty`, and `get_service_report`.
 
-An assessment is advisory contractual evidence, not a legal determination of consumer rights. A partial result means a mix of explicitly covered and excluded claim items, not an invented payout percentage. Any unknown item or uncertain identity makes the entire assessment INCONCLUSIVE. A verified identity with failure after the coverage end or reporting after the deadline is EXCLUDED. A failure before purchase is INCONCLUSIVE. End dates are inclusive.
+An assessment is advisory contractual evidence, not a legal determination of consumer rights. A partial result means a mix of explicitly covered and excluded claim items, not an invented payout percentage. Uncertain identity makes the assessment INCONCLUSIVE. Within verified coverage/reporting dates, any unknown item also makes the entire assessment INCONCLUSIVE. A verified identity with failure after the coverage end or reporting after the deadline is EXCLUDED. A failure before purchase is INCONCLUSIVE. End dates are inclusive.
 
 ## Run verification
 

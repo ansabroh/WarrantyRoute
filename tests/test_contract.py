@@ -33,7 +33,7 @@ def mocks(vm, result=None, corrupt=None, audit='VALID'):
     vm.clear_mocks()
     for name,body in [('purchase',PURCHASE),('terms',TERMS),('service',SERVICE)]:
         vm.mock_web(BASE+name+'.txt', {'status':200,'body':body if name != corrupt else body+' altered'})
-    vm.mock_llm('WarrantyRoute independent',json.dumps(json.dumps(result or answer())))
+    vm.mock_llm('WarrantyRoute independent',json.dumps(result or answer()))
     vm.mock_llm('WarrantyRoute grounding audit',audit)
 
 def ready(setup, vm, alice, bob):
@@ -121,7 +121,7 @@ def test_registration_rejects(setup,direct_vm,mutation):
     if mutation=='extra': w['hidden']='bad'
     with direct_vm.expect_revert(): x.register_warranty('w1',json.dumps(w))
 
-@pytest.mark.parametrize('mutation',['quote','missing','status','extra','duplicate_json','huge'])
+@pytest.mark.parametrize('mutation',['quote','missing','status','extra','not_object','huge'])
 def test_bad_ai(setup,direct_vm,direct_alice,direct_bob,mutation):
     x=ready(setup,direct_vm,direct_alice,direct_bob); a=answer()
     if mutation=='quote': a['items'][0]['term_quote']='A fabricated warranty clause.'
@@ -129,11 +129,11 @@ def test_bad_ai(setup,direct_vm,direct_alice,direct_bob,mutation):
     if mutation=='status': a['items'][0]['status']='APPROVED'
     if mutation=='extra': a['refund']=100
     raw=json.dumps(a)
-    if mutation=='duplicate_json': raw=raw.replace('"identity": "MATCH"','"identity":"UNKNOWN","identity":"MATCH"')
+    if mutation=='not_object': raw='[1,2,3]'
     if mutation=='huge': raw='x'*15000
     direct_vm.clear_mocks(); mocks(direct_vm)
     # Replace review mock, preserve independent web mocks.
-    direct_vm._llm_mocks.clear(); direct_vm.mock_llm('WarrantyRoute independent',json.dumps(raw))
+    direct_vm._llm_mocks.clear(); direct_vm.mock_llm('WarrantyRoute independent',raw)
     x.assess('c1'); assert json.loads(x.get_status('c1'))['outcome']=='INCONCLUSIVE'
 
 @pytest.mark.parametrize('mode',['different','audit','quote','error','malformed'])
@@ -146,3 +146,9 @@ def test_validator_rejects(setup,direct_vm,direct_alice,direct_bob,mode):
         assert not direct_vm.run_validator(leader_result={'answer':a})
     if mode=='error': assert not direct_vm.run_validator(leader_error=ValueError('fake'))
     if mode=='malformed': assert not direct_vm.run_validator(leader_result={'answer':{}})
+
+
+def test_duplicate_registration_json(setup,direct_vm):
+    x,w,c=setup
+    raw=json.dumps(w).replace('"product": "mixer_01"','"product":"wrong","product":"mixer_01"')
+    with direct_vm.expect_revert('Duplicate key'): x.register_warranty('w1',raw)
