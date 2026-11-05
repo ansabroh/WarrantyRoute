@@ -1,0 +1,59 @@
+{
+  "network": "GenLayer Studio / Studionet",
+  "chain_id": 61999,
+  "contract_address": "0x9EB4351825346fD068Cb68920bfA3f494bcEcc57",
+  "explorer_url": "https://explorer-studio.genlayer.com/address/0x9EB4351825346fD068Cb68920bfA3f494bcEcc57",
+  "account": "0xA8aCB0A6c059462578823B5Eb09321c9119673bF",
+  "source_commit": "87e0fcfd2d304032b02dc95448f0f9562f25bc1b",
+  "source_sha256": "81aa9f3e5e344ebb3dba91b199bf9580863d2870f07da842e40f1bc10ce85bda",
+  "deployed_source_matches": true,
+  "execution_mode": "Normal (Full Consensus)",
+  "simulation": false,
+  "synthetic": true,
+  "same_account_demo_roles": true,
+  "transactions": [
+    {
+      "method": "deploy",
+      "hash": "0x7298d966035d94703f6e3f61591f92c8534b9819902c5d984a7fdb03e1740ee0",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x7298d966035d94703f6e3f61591f92c8534b9819902c5d984a7fdb03e1740ee0",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS"
+    },
+    {
+      "method": "register_warranty",
+      "hash": "0x2766afb3d6dce6968f9b1cad13a8d5f9a02fbbf0a0b716dd00420b0c6102b04d",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x2766afb3d6dce6968f9b1cad13a8d5f9a02fbbf0a0b716dd00420b0c6102b04d",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS"
+    },
+    {
+      "method": "file_claim",
+      "hash": "0x6b6b22360d5675ea705421ad2dffbc8ee6764d4997f116ed2e4d90ea23b0b480",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x6b6b22360d5675ea705421ad2dffbc8ee6764d4997f116ed2e4d90ea23b0b480",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS"
+    },
+    {
+      "method": "attest_service",
+      "hash": "0x2f46fdc13b116cac5f5a7b83998c73a62e2ae835d4d9922240a0e9d34b90bfdb",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x2f46fdc13b116cac5f5a7b83998c73a62e2ae835d4d9922240a0e9d34b90bfdb",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS"
+    },
+    {
+      "method": "assess",
+      "hash": "0x714f4affefe34563b132261bdbc2edfdf93f7310f20ce797466feedaee22f119",
+      "explorer_url": "https://explorer-studio.genlayer.com/tx/0x714f4affefe34563b132261bdbc2edfdf93f7310f20ce797466feedaee22f119",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS"
+    },
+    {
+      "method": "no-op code upgrade",
+      "hash": "0xc7de40e531e22a9a53af16f94aa1bd879802490bdb1855de44d4dffbf6080c39",
+      "status": "FINALIZED",
+      "note": "Same v1 source; did not alter stored warranty, claim or assessment."
+    }
+  ],
+  "outcome": "INCONCLUSIVE",
+  "version": "WarrantyRoute/1"
+}

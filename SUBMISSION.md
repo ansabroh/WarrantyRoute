@@ -7,4 +7,8 @@ WarrantyRoute is a standalone GenLayer Intelligent Contract for product warranty
 
 Source: https://github.com/ansabroh/WarrantyRoute
 
-Do not submit a guessed explorer URL. Use the real deployed address and finalized transaction evidence recorded in EVIDENCE.md.
+Explorer contract: https://explorer-studio.genlayer.com/address/0x15a7F0799E6cc6E1123aafaC92A29855886fBEc1
+
+Deployment evidence: https://github.com/ansabroh/WarrantyRoute/blob/main/EVIDENCE.md
+
+Status: source, tests and deployment are available. v1.1 live assessment remains unverified because browser usage was exhausted before submission. See EVIDENCE.md; do not describe the v1.1 live lifecycle as complete.

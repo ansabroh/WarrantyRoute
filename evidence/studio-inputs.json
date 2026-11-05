@@ -1,0 +1,18 @@
+{
+  "register_warranty": [
+    "w_demo",
+    "{\"product\":\"mixer_01\",\"claimant\":\"0x3545fcC44194d8443d2119be594B8dFF16c21045\",\"service_provider\":\"0x3545fcC44194d8443d2119be594B8dFF16c21045\",\"purchase_day\":739617,\"coverage_end_day\":739981,\"report_by_day\":739981,\"purchase\":{\"url\":\"https://raw.githubusercontent.com/ansabroh/WarrantyRoute/87e0fcfd2d304032b02dc95448f0f9562f25bc1b/fixtures/purchase.txt\",\"sha256\":\"c6bfc8d256202f1dc5dc4e89e5dead6a665438eba462af79c83842d04cf314b4\",\"bytes\":276},\"terms\":{\"url\":\"https://raw.githubusercontent.com/ansabroh/WarrantyRoute/87e0fcfd2d304032b02dc95448f0f9562f25bc1b/fixtures/terms.txt\",\"sha256\":\"e30a263829c4b91cdef27ed7cf3108a402e36b6602e3c761c8829492932ebceb\",\"bytes\":556}}"
+  ],
+  "file_claim": [
+    "c_demo",
+    "w_demo",
+    "{\"failure_day\":739768,\"items\":[{\"id\":\"motor\",\"component\":\"motor\",\"defect\":\"Motor winding manufacturing defect confirmed by inspection.\"},{\"id\":\"housing\",\"component\":\"housing\",\"defect\":\"Cosmetic housing scratch.\"}]}"
+  ],
+  "attest_service": [
+    "c_demo",
+    "{\"url\":\"https://raw.githubusercontent.com/ansabroh/WarrantyRoute/87e0fcfd2d304032b02dc95448f0f9562f25bc1b/fixtures/service.txt\",\"sha256\":\"8a7c54a00c6bb4212796f2fba3253da01564e4206afaf32ee2a1a52d9da3953b\",\"bytes\":611}"
+  ],
+  "assess": [
+    "c_demo"
+  ]
+}

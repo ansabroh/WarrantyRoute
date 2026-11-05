@@ -1,0 +1,43 @@
+{
+  "network": "GenLayer Studio / Studionet",
+  "chain_id": 61999,
+  "version": "WarrantyRoute/1.1",
+  "contract_address": "0x15a7F0799E6cc6E1123aafaC92A29855886fBEc1",
+  "explorer_url": "https://explorer-studio.genlayer.com/address/0x15a7F0799E6cc6E1123aafaC92A29855886fBEc1",
+  "account": "0x3545fcC44194d8443d2119be594B8dFF16c21045",
+  "source_commit": "fd55cc462b8352cbb4128d977f48d344d87c6b78",
+  "fixture_commit": "87e0fcfd2d304032b02dc95448f0f9562f25bc1b",
+  "source_sha256": "93e8273feb55571e5713d8bb36fa6f264addcb0da5d9cf69d3e76ccf139b9b99",
+  "deployed_source_matches": true,
+  "execution_mode": "Normal (Full Consensus)",
+  "simulation": false,
+  "synthetic": true,
+  "same_account_demo_roles": true,
+  "transactions": [
+    {
+      "method": "deploy",
+      "hash": "0xde6d6cc8f70363354008450759ff0d5e7acb5dcfa7f71735ced20ae989b1a3f1",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS"
+    }
+  ],
+  "lifecycle_observations": [
+    {
+      "method": "register_warranty",
+      "transaction_prefix": "0xee81",
+      "observed_status": "FINALIZED"
+    },
+    {
+      "method": "file_claim",
+      "transaction_prefix": "0x2d8e",
+      "observed_status": "FINALIZED"
+    },
+    {
+      "method": "attest_service",
+      "transaction_prefix": "0x975b",
+      "observed_status": "FINALIZED"
+    }
+  ],
+  "assessment_status": "NOT_SUBMITTED",
+  "blocker": "Automatic browser approval review could not complete: session usage limit reached."
+}

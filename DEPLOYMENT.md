@@ -9,4 +9,6 @@
 7. Read status and receipt. Expected synthetic demo: PARTIALLY_COVERED (motor covered, housing cosmetic exclusion). A strict review may instead produce INCONCLUSIVE; document actual observations rather than assuming this result.
 8. Save receipts, network ID, exact source SHA-256 and explorer contract URL in `evidence/deployment.json` and EVIDENCE.md. Do not claim testnet deployment from a direct-mode test.
 
+Current v1.1 deployment: https://explorer-studio.genlayer.com/address/0x15a7F0799E6cc6E1123aafaC92A29855886fBEc1
+
 No automatic deployment script signs with a user key. The intended deployment surface is Studio's built-in account. See EVIDENCE.md for performed steps and remaining blockers, if any.

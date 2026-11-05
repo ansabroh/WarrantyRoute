@@ -1,0 +1,6 @@
+
+✓ Lint passed (3 checks)
+✓ Validation passed
+  Contract: WarrantyRoute
+  Methods: 9 (5 view, 4 write)
+  ℹ py-genlayer: a newer runner is available (1zr6nqk597d97kg0dyxg0shhrykx5v02zjgnyrajapy4wlqvfvwh). See https://github.com/genlayerlabs/genvm/releases for changes.

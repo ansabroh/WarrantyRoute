@@ -2,6 +2,8 @@
 
 Standalone GenLayer Intelligent Contract for product warranty eligibility. It combines deterministic coverage deadlines with independent AI interpretation of original warranty terms, reported defects, exclusions and repair history. It records **COVERED**, **PARTIALLY_COVERED**, **EXCLUDED** or **INCONCLUSIVE** without approving payments or transferring assets.
 
+Live v1.1 contract: [GenLayer Studio Explorer](https://explorer-studio.genlayer.com/address/0x15a7F0799E6cc6E1123aafaC92A29855886fBEc1). Deployment and remaining live-assessment status: [EVIDENCE.md](EVIDENCE.md).
+
 ## Why GenLayer
 
 Whether a winding failure is a manufacturing defect, a scratch is cosmetic, or a repair history triggers an exclusion requires interpreting evidence. Each validator independently fetches the exact registered documents and performs its own assessment with `gl.vm.run_nondet_unsafe`. It compares identity and every item classification, validates the leader's quotations against the fetched bytes, then independently audits contextual grounding. Deterministic code derives the final outcome and hash-linked receipt.

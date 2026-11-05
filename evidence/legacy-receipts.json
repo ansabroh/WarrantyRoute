@@ -1,0 +1,16 @@
+[
+  {
+    "claim_hash": "661d9c867bfc4de423e09e96ecb15731bd5f03081d9226f47cd1806bc1afb60b",
+    "claim_id": "c_demo",
+    "outcome": "INCONCLUSIVE",
+    "previous_hash": "",
+    "receipt_hash": "6a797b8d5b1f40f60a66472cf8283477817a3fe594f7696cea187ecadd222a5d",
+    "report_hash": "cf4726276d41245c4d4f86db5bdddbfe7b9e92c71bcc07f2dd18df11fb40fbe1",
+    "review": {
+      "error": "INVALID_AI_REVIEW"
+    },
+    "sequence": 1,
+    "version": "WarrantyRoute/1",
+    "warranty_hash": "4dacbd7ae900a270928a3ac377c2f34c148291a11a973ff512715af456a64b62"
+  }
+]
